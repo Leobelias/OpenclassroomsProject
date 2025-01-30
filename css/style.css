@@ -13,7 +13,7 @@
 }
 .redirection{
 
-    color:black;
+   color:black;
     display: flex;
     justify-items: flex-end;
     gap: 32px;
@@ -22,7 +22,6 @@
 .hebergements-header:hover{
 
     color:#0065FC;
-    padding-top: 10%;
     border-color:#0065FC;
     border-top: solid 2px;
 }
@@ -30,14 +29,87 @@
 .activite-header:hover{
 
     color:#0065FC;
-    padding-top: 10%;
     border-color:#0065FC;
     border-top: solid 2px;
 }
 
+.recherche-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #F2F2F2;
+    border-radius: 20px;
+}
 
 
+.recherche-button i.fa-solid.fa-location-dot{
+    display: flex;
+    padding: 20px;
+    font-size: 22px;
+}
 
+.recherche-button input{
+    height: 55px;
+    padding-left: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-recherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065FC;
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    border-radius: 0px 20px 20px 0px;
+    border-left : none;
+    border-color: #0065FC;
+}
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+    border: red solid;
+    align-items: center;
+}
+
+.filtres h3{
+    padding-right: 10px;
+}
+
+.filtres button{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-color: #F2F2F2;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 20px;
+    height: 40px;
+    padding: 20px;
+    margin: 10px;
+}
+.filtres button span{
+    padding:10px;
+}
+
+.infos{
+    padding:10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.infos i {
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 50px;
+    border: 2px solid #D9D9D9 ;
+    font-size: 10px;
+    min-width: 10px;
+    padding: 0.7%;
+}
 
 :root {
     --main-color: #0065FC;
@@ -78,6 +150,40 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+
+.marseille{
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 5px;
+    width: 33%;
+    flex-direction: row;
+    justify-content: space-between;
+    border: red solid;
+    box-sizing:border-box;
+
+}
+
+.marseille img{
+    display:flex;
+    object-fit:cover;
+    overflow: hidden;
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.carte-texte{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-subtitle{
+    display: flex;
+    margin: 0;
+}
 .card img {
     object-fit: cover;
 }
@@ -94,10 +200,13 @@ a {
     color: var(--main-bg-color)
 }
 
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+
 }
 
 .hebergements-and-populaires section {
@@ -109,7 +218,11 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
+    display:flex;
+    border: solid red;
     width: 65%;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /****** Populaires ***********/
@@ -155,6 +268,29 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+footer{
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-ligne{
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    display: flex;
+    padding: 5px;
+    font-size: 15px;
+}
+
+footer h6{
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 
