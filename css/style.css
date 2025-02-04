@@ -7,45 +7,41 @@
     display: flex;
     justify-content: flex-start;
 }
-.header-container{
+header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.redirection{
-
-   color:black;
+header nav{
     display: flex;
-    justify-items: flex-end;
+    align-items: center;
     gap: 32px;
+    height: 100%;
 }
 
-.hebergements-header:hover{
-
-    color:#0065FC;
-    border-color:#0065FC;
-    border-top: solid 2px;
+header nav a {
+  padding: 30px 0;
 }
 
-.activite-header:hover{
-
+header nav a:hover{
     color:#0065FC;
     border-color:#0065FC;
-    border-top: solid 2px;
+    border-top: 2px solid #0065FC;
 }
 
 .recherche-button{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color:  #F2F2F2;
     border-radius: 20px;
 }
-
 
 .recherche-button i.fa-solid.fa-location-dot{
     display: flex;
     padding: 20px;
     font-size: 22px;
+    background-color:  #F2F2F2;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .recherche-button input{
@@ -53,7 +49,9 @@
     padding-left: 20px;
     font-size: 22px;
     font-weight: 700;
-    border: none;
+    border: 3px #F2F2F2 solid;
+    border-left: none;
+    border-right: none;
 }
 
 .btn-recherche{
@@ -66,13 +64,12 @@
     height: 60px;
     border-radius: 0px 20px 20px 0px;
     border-left : none;
-    border-color: #0065FC;
+    border: 3px #0065FC
 }
 
 .filtres{
     display: flex;
     flex-direction: row;
-    border: red solid;
     align-items: center;
 }
 
@@ -84,14 +81,23 @@
     display: flex;
     align-items: center;
     background-color: white;
-    border-color: #F2F2F2;
+    border: 3px solid #F2F2F2;
     font-size: 16px;
     font-weight: 700;
-    border-radius: 20px;
+    border-radius: 30px;
     height: 40px;
     padding: 20px;
     margin: 10px;
 }
+
+.filtres button:hover{
+    background-color: lightblue;
+}
+
+.filtres button i {
+  color: #0065FC;
+}
+
 .filtres button span{
     padding:10px;
 }
@@ -124,6 +130,11 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+}
+
+h1, h3 {
+    margin: 0;
 }
 
 .main-container {
@@ -150,6 +161,11 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.hebergements-and-populaires .hebergements .hebergement-marseille {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .marseille{
     display: flex;
@@ -157,11 +173,12 @@ a {
     flex-wrap: wrap;
     border-radius: 20px;
     padding: 5px;
-    width: 33%;
+    width: 30%;
     flex-direction: row;
     justify-content: space-between;
-    border: red solid;
     box-sizing:border-box;
+    height: 210px;
+    margin: 10px;
 
 }
 
@@ -171,9 +188,12 @@ a {
     overflow: hidden;
     border-radius: 20px;
     max-width: 100%;
-    height: auto;
+    height: 125px;
+    width: 100%;
     box-sizing: border-box;
+
 }
+
 
 .carte-texte{
     display: flex;
@@ -200,6 +220,58 @@ a {
     color: var(--main-bg-color)
 }
 
+.btnmore{
+    display: flex;
+    margin: 15px;
+}
+
+.activitymarseille{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.activitymarseille h3{
+    padding:10px;
+}
+.activity{
+    display: flex;
+   
+}
+
+.cardactivitemarseille{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.activity img{
+    display:flex;
+    object-fit:cover;
+    overflow: hidden;
+    height: 450px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
+}
+.cardconteiner{
+    display: flex;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+    border:#F2F2F2 1px solid;
+    border-top: none;
+    box-shadow: #F2F2F2 5px 10px 10px;
+}
+
+.cardtxt{
+    display: flex;
+    padding: 20px;
+    width: 300px;
+}
+
 
 
 /****** Hebergements And Populaires ***********/
@@ -219,10 +291,8 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     display:flex;
-    border: solid red;
     width: 65%;
     flex-direction: column;
-    gap: 10px;
 }
 
 /****** Populaires ***********/
@@ -301,6 +371,12 @@ footer h6{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+  .filtres {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -336,4 +412,10 @@ footer h6{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+}
+
+
+
+.btnContainer {
+    display: flex;
 }
