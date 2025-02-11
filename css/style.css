@@ -490,7 +490,7 @@ footer h6{
     .recherche-button{
         display: flex;
         padding:35px;}
-    }
+
 
     .recherche-button i.fa-solid.fa-magnifying-glass{
         color:white
@@ -591,18 +591,28 @@ footer h6{
 
     .hebergement-marseille{
         flex-direction: column;
+        padding: 15px;
     }
 
-
+    .hebergements h2{
+        padding-left:20px;
+        margin-bottom:0px ;
+    }
     .marseille{
         width: 100%;
         box-shadow: 1px 2px 14px -1px rgba(168,168,168,1)
+    }
+
+    .btnmore{
+        margin: 0px;
+        padding-left: 20px;
     }
 
     .activity{
         flex-direction: column;
     }
 
+    
     .activitymarseille{
         padding-right: 30px;
         margin: 0px;
@@ -628,10 +638,13 @@ footer h6{
 
     .cardconteiner{
         height: 60px;
+        align-items: flex-end;
 }
 
 .activitymarseille h3{
-    padding:30px
+    padding:30px;
+    padding-bottom: 15px;
+    font-size: 22px;
 }
 
     footer{
