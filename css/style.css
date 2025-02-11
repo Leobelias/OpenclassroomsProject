@@ -3,6 +3,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 .logo-image {
     display: flex;
     justify-content: flex-start;
@@ -21,6 +25,7 @@ header nav{
 
 header nav a {
   padding: 30px 0;
+  border-top: 2px solid transparent;
 }
 
 header nav a:hover{
@@ -42,6 +47,7 @@ header nav a:hover{
     font-size: 22px;
     background-color:  #F2F2F2;
     border-radius: 20px 0px 0px 20px;
+    color: black;
 }
 
 .recherche-button input{
@@ -186,7 +192,7 @@ a {
     display:flex;
     object-fit:cover;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     max-width: 100%;
     height: 125px;
     width: 100%;
@@ -237,13 +243,13 @@ a {
 }
 .activity{
     display: flex;
-   
+    justify-content: space-between;
 }
 
 .cardactivitemarseille{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 23%;
     padding: 10px;
 
 }
@@ -264,6 +270,7 @@ a {
     border:#F2F2F2 1px solid;
     border-top: none;
     box-shadow: #F2F2F2 5px 10px 10px;
+    width: 100%;
 }
 
 .cardtxt{
@@ -341,10 +348,11 @@ a {
 }
 
 footer{
-    height: 10%;
-    display: flex;
-    justify-content: space-around;
-
+  height: 10%;
+  display: flex;
+  background-color: #F2F2F2;
+  justify-content: space-between;
+  padding-right: 20%;
 }
 
 .footer-ligne{
@@ -411,11 +419,145 @@ footer h6{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+
+
+    .main-container{
+        padding: 0;
+    }
+
+    .main-container header{
+        flex-direction: column;
+        height: 2.8%;
+        padding-bottom: 50px;
+    }
+
+    .logo-image{
+        height: 120%;
+        
+    }
+
+    header{
+        align-items: normal;
+    }
+
+    header h1{
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+
+    header nav{
+        justify-content: space-around;
+        gap:0px;
+    }
+
+    header nav a{
+        display: flex;
+        font-size: 19px;
+        padding: 20px;
+        width: 100%;
+        justify-content: space-around;
+        border-bottom: #D9D9D9 2px solid;
+    }
+
+    header nav a:hover{
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
+    
+
+    .loupe {
+      display: block !important;
+      background-color: #0065FC;
+      color: white;
+      font-size: 18px;
+      height: 65px;
+      border-radius: 20px 20px 20px 20px;
+      border-left : none;
+      border: 3px #0065FC;
+      width: 59px;
+    }
+
+    .recherche-button{
+        display: flex;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .recherche-button i.fa-solid.fa-magnifying-glass{
+        color:white
+    }
+
+
+    .btn-recherche {
+      display: none;
+    }
+
+    .accroche-page {
+        padding-top: 30px;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+
+    .accroche-page h2{
+        margin-bottom: 10px;
+    }
+
+    .accroche-page p{
+        margin-top:0px;
+        margin-bottom:0px
+    }
+
+    .filtres h3{
+        padding-left: 17px;
+        padding-bottom: 20px;
+    }
+
+    .btnContainer{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .btnContainer button{
+        min-width: 186px;
+        height: 50px;
+        gap: 10px;
+        border-radius: 25px;
+        border-width: 2px;
+        padding-top: 4px;
+        padding-right: 19px;
+        padding-bottom: 4px;
+        padding-left: 19px;
+        margin: 5px;
+    }
+
+    .infos{
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top:35px;
+        padding-bottom: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    .infos i.fa-solid.fa-info{
+        width: 24;
+        height: 24;
+        border-width: 1px;
+        
+    }
 }
 
 
 
 .btnContainer {
     display: flex;
+}
+
+.loupe {
+  display: none;
 }
