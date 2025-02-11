@@ -489,7 +489,7 @@ footer h6{
 
     .recherche-button{
         display: flex;
-        padding:35px;
+        padding:35px;}
     }
 
     .recherche-button i.fa-solid.fa-magnifying-glass{
@@ -571,8 +571,13 @@ footer h6{
         background-color: var(--main-bg-color);
     }
 
+    .populaires-title{
+        padding-left: 20px;
+    }
+
     .populaires-cards{
         flex-direction: column;
+        padding-left: 20px;
     }
 
     .populaires-cards a{
