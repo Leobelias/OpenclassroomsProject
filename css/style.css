@@ -13,6 +13,10 @@ button {
     cursor: pointer;
 }
 
+header h1 {
+    display: flex;
+}
+
 .logo-image {
     display: flex;
     justify-content: flex-start;
@@ -40,11 +44,23 @@ header nav a:hover{
     border-top: 2px solid #0065FC;
 }
 
+.accroche-page h2{
+    margin-bottom: 4px;
+}
+
+.accroche-page p{
+    margin-top: 4px;
+    margin-bottom: 35px;
+}
+
+
+
 .recherche-button{
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    margin-bottom: 35px;
 }
 
 .recherche-button i.fa-solid.fa-location-dot{
@@ -394,10 +410,27 @@ footer h6{
 
     .hebergements-and-populaires {
         flex-direction: column;
+    
     }
 
     .hebergements {
         width: 100%;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hebergement-marseille{
+        justify-content: space-evenly;
+    }
+
+    .hebergements h2{
+        margin-top: 0px;
+    }
+
+    .marseille{
+        margin: 0px;
+        margin-bottom: 30px;
     }
 
     .populaires {
@@ -405,10 +438,20 @@ footer h6{
         margin-top: 50px;
     }
 
+    .populaires-title{
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+
+    .populaires-cards .card{
+        margin-top: 20px;
+    }
+
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+   
     }
 
     .populaires-cards a {
@@ -422,6 +465,25 @@ footer h6{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .cardactivitemarseille img{
+        height: 200px ;
+    }
+
+    .activitymarseille{
+        margin-left:20px;
+    }
+
+    .footer-ligne h6{
+        margin: 20px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    } 
+
+
+
+
+
 }
 
 /* Small devices (phones, less than 768px) */
@@ -508,7 +570,7 @@ footer h6{
     }
 
     .accroche-page h2{
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     .accroche-page p{
