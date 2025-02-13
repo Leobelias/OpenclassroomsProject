@@ -4,7 +4,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-html, body {
+html{
     overflow-x: hidden;
 }
 
@@ -60,7 +60,8 @@ header nav a:hover{
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 35px 0px;
+    width: 100%;
 }
 
 .recherche-button i.fa-solid.fa-location-dot{
@@ -110,7 +111,7 @@ header nav a:hover{
     align-items: center;
     background-color: white;
     border: 3px solid #F2F2F2;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     border-radius: 30px;
     height: 40px;
@@ -119,7 +120,7 @@ header nav a:hover{
 }
 
 .filtres button:hover{
-    background-color: lightblue;
+    background-color: #DEEBFF;
 }
 
 .filtres button i {
@@ -586,14 +587,15 @@ footer h6{
     .btnContainer{
         display: flex;
         flex-wrap:wrap;
-        justify-content: center;
+        justify-content: space-evenly;
+        margin-bottom: 5px;
+        font-size: 14px;
     }
 
     .btnContainer button{
         display: flex;
-        width: 33% ;
-        padding-right: 33%;
-        
+        width: 45% ;
+        margin: 0px;
     }
 
     .infos{
@@ -604,21 +606,20 @@ footer h6{
         padding-left: 20px;
         padding-right: 20px;
         font-size: 16px;
+        align-items: center;
     }
 
     .infos i.fa-solid.fa-info{
-        width: 24;
-        height: 24;
+        height: 13px;
+        width: 13px;
         border-width: 1px;
-        margin: 10px;
         padding: 7px
     }
 
-    .hebergements-and-populaires section{
+     .hebergements-and-populaires .hebergements{
         display: flex;
-        border-radius: 0px 0px 0px 0px;;
-        padding-right: 20px;
-        padding-left: 0px;
+        border-radius: 0px 0px 0px 0px;
+        padding: 15px 0px;
     }
 
     .hebergements-and-populaires{
@@ -638,29 +639,33 @@ footer h6{
     }
 
     .populaires-cards{
+        display: flex;
         flex-direction: column;
-        padding-left: 20px;
     }
 
     .populaires-cards a{
-        width: 100%;
+        width: 88%;
     }
+
 
     .hebergements{
         background-color:white;
         padding: 0px;
     }
 
-    .hebergement-marseille{
+    .hebergements-and-populaires .hebergements .hebergement-marseille{
         flex-direction: column;
-        padding: 15px;
+        width: 88%;
+        display: flex;
     }
 
     .hebergements h2{
+        display: flex;
         padding-left:20px;
         margin-bottom:0px ;
     }
     .marseille{
+        display: flex;
         width: 100%;
         box-shadow: 1px 2px 14px -1px rgba(168,168,168,1)
     }
@@ -672,21 +677,22 @@ footer h6{
 
     .activity{
         flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
 
     
     .activitymarseille{
-        padding-right: 30px;
         margin: 0px;
     }
+    
     .cardactivitemarseille{
         display: flex;
         border-radius: 20px;
         padding: 5px;
-        width: 100%;
+        width: 88%;
         flex-direction: row;
         height: 210px;
-        margin: 10px;
     }
 
     .cardactivitemarseille img{
@@ -694,7 +700,7 @@ footer h6{
         object-fit:cover;
         overflow: hidden;
         border-radius: 20px 20px 0 0;
-        height: 125px;
+        height: 137px;
         width: 100%;    
     }
 
@@ -706,7 +712,7 @@ footer h6{
 .activitymarseille h3{
     padding:30px;
     padding-bottom: 15px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
     footer{
